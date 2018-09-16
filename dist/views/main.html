@@ -1,23 +1,41 @@
-<div class="jumbotron">
-  <h1>'Allo, 'Allo!</h1>
-  <p class="lead">
-    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-    Always a pleasure scaffolding your apps.
-  </p>
-  <p><a class="btn btn-lg btn-success" ng-href="#/">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
-</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
 
-<div class="row marketing">
-  <h4>HTML5 Boilerplate</h4>
-  <p>
-    HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
-  </p>
+      <div class="card">
+        <img class="card-img-top" src="../images/thumb-imovel.png" alt="imagem do imóvel resultante da busca">
 
-  <h4>Angular</h4>
-  <p>
-    AngularJS is a toolset for building the framework most suited to your application development.
-  </p>
+        <div class="card-body">
+          <div class="card-title">
+            <h4 class=".card-text"><span>{{imovel.desc}}</span> -{{imovel.end}}</h4>
+          </div>
+          <h5 class=".card-text">{{imovel.cidade}}</h5>
 
-  <h4>Karma</h4>
-  <p>Spectacular Test Runner for JavaScript.</p>
+          <div class="card-ico-container">
+            <div class="ico-banheira">
+              <span>{{imovel.random}}</span><img src="../images/ico-banheira.png">
+            </div>
+            <div class="ico-solteiro">
+              <span>{{imovel.random}}</span><img src="../images/ico-solt.png">
+            </div>
+            <div class="ico-casal">
+              <span>{{imovel.random}}</span><img src="../images/ico-casal.png">
+            </div>
+            <div class="ico-garagem">
+              <span>{{imovel.random}}</span><img src="../images/ico-garagem.png">
+            </div>
+          </div>
+
+          <div class="metros-container">
+            <div class="mts-util">
+              {{imovel.metrosUtil}}
+            </div>
+            <div class="mts-total">
+              {{imovel.metrosTotal}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

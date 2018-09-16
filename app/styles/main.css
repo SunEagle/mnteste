@@ -54,6 +54,7 @@ body {
 header {
   background: url("../images/city-bkg.png") no-repeat;
   background-position-y: 2.4em;
+  height: 57vh;
 }
 
 .logo-container {
@@ -80,15 +81,15 @@ header {
   vertical-align: middle;
 }
 
-.social>div {
-  text-align: right;
-  width: 75%;
+.social-links {
   line-height: 90%;
 }
 
-.social>div p {
+.social>p {
   font-size: 1.3em;
-  font-weight: 200%;
+  font-weight: 600;
+  color: #8b8b8b;
+  padding-right: 15.6vh;
 }
 
 .busca-imovel {
@@ -115,14 +116,18 @@ header {
   z-index: -1;
 }
 
+.form-pesquisa {
+  background: url("../images/busca-bkg.png") center no-repeat;
+  min-height: 12vh;
+  position: relative;
+}
+
 .busca-form {
-  z-index: 2;
   width: auto;
-  max-height: 46vh;
   position: absolute;
-  top: 0;
+  top: 21.6vh;
   bottom: 0;
-  left: 0;
+  left: 20vh;
   right: 0;
   margin: auto;
 }
@@ -145,23 +150,26 @@ header {
 }
 
 .quero-container {
-  margin: 1.8em;
   display: flex;
   justify-content: center;
 }
 
 .quero-container select:first-child {
-  margin-left: 3vh;
+  margin-left: 4vh;
   margin-right: 2vh;
-  width: 21.2%;
+  margin-top: .5vh;
+  width: 22%;
   height: 3.8vh;
+  z-index: 1;
 }
 
 .quero-container select:last-child {
   margin-left: 3vh;
-  margin-right: 2vh;
-  width: 21.3%;
+  margin-right: 3vh;
+  margin-top: .6vh;
+  width: 21.7%;
   height: 3.8vh;
+  z-index: 1;
 }
 
 .tenho-container {
@@ -172,48 +180,20 @@ header {
 .tenho-container select:first-child {
   margin-left: 11.5vh;
   margin-right: 2.8vh;
-  margin-top: .7vh;
-  width: 20.2%;
+  margin-top: 3.2vh;
+  width: 22.2%;
   height: 3.8vh;
+  z-index: 1;
 }
 
 .tenho-container select:last-child {
-  margin-left: 2.6vh;
+  margin-left: 2vh;
   margin-right: 2vh;
-  margin-top: .7vh;
-  width: 20.2%;
+  margin-top: 3.25vh;
+  width: 22.2%;
   height: 3.8vh;
+  z-index: 1;
 }
-
-/*.quero-tipo-imovel {
-  margin-left: 3vh;
-  margin-right: 2vh;
-  width: 21.2%;
-  height: 3.8vh;
-}*/
-
-/*.quero-end-imovel {
-  margin-left: 3vh;
-  margin-right: 2vh;
-  width: 21.3%;
-  height: 3.8vh;
-}*/
-
-/*.tenho-tipo-imovel {
-  width: 21.2%;
-  margin-right: 2.6vh;
-  margin-left: 10.5vh;
-  margin-top: .4vh;
-  height: 3.8vh;
-}*/
-
-/*.tenho-end-imovel {
-  margin-left: 2.6vh;
-  margin-right: 2vh;
-  margin-top: .7vh;
-  width: 20.2%;
-  height: 3.8vh;
-}*/
 
 /* -------------- Header End------------- */
 
