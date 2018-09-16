@@ -57,6 +57,10 @@ header {
   height: 57vh;
 }
 
+nav>.container-fluid {
+  margin: 0;
+}
+
 .logo-container {
   display: flex;
   align-items: center;
@@ -123,13 +127,14 @@ header {
 }
 
 .busca-form {
-  width: auto;
   position: absolute;
-  top: 21.6vh;
+  width: auto;
+  height: auto;
+  top: 0;
   bottom: 0;
-  left: 20vh;
+  left: 0;
   right: 0;
-  margin: auto;
+  padding: 25vh;
 }
 
 .busca-bkg {
@@ -157,9 +162,9 @@ header {
 .quero-container select:first-child {
   margin-left: 4vh;
   margin-right: 2vh;
-  margin-top: .5vh;
-  width: 22%;
-  height: 3.8vh;
+  margin-top: .6vh;
+  width: 263px;
+  height: 36.8px;
   z-index: 1;
 }
 
@@ -167,8 +172,8 @@ header {
   margin-left: 3vh;
   margin-right: 3vh;
   margin-top: .6vh;
-  width: 21.7%;
-  height: 3.8vh;
+  width: 263px;
+  height: 36.8px;
   z-index: 1;
 }
 
@@ -179,19 +184,19 @@ header {
 
 .tenho-container select:first-child {
   margin-left: 11.5vh;
-  margin-right: 2.8vh;
+  margin-right: 2vh;
   margin-top: 3.2vh;
-  width: 22.2%;
-  height: 3.8vh;
+  width: 263px;
+  height: 36.8px;
   z-index: 1;
 }
 
 .tenho-container select:last-child {
-  margin-left: 2vh;
+  margin-left: 3vh;
   margin-right: 2vh;
   margin-top: 3.25vh;
-  width: 22.2%;
-  height: 3.8vh;
+  width: 263px;
+  height: 36.8px;
   z-index: 1;
 }
 
