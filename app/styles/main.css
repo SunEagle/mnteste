@@ -1,0 +1,318 @@
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+/* -------------- Nav Start------------- */
+.links-contaienr {
+  min-height: 200px;
+}
+
+.links-container div {
+  display: inline-block;
+  border: 1px solid #000;
+  min-height: 5vh;
+}
+
+.links-container div p {
+  margin: 0 auto;
+  line-height: 4em;
+}
+
+.links-container div:nth-child(4) {
+  background-color: #6f3024;
+  color: #fff;
+}
+
+.links-container div:nth-child(5) {
+  background: #ff6111;
+  display: table;
+  /*padding: 3px 0 2px 0;*/
+}
+
+.links-container div:nth-child(5) a {
+  color: #fff;
+  text-decoration: none;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.nav-links-txt {
+  text-transform: uppercase;
+  font-size: .8em;
+}
+
+/* -------------- Nav End------------- */
+
+/* -------------- Header Start------------- */
+header {
+  background: url("../images/city-bkg.png") no-repeat;
+  background-position-y: 2.4em;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  min-height: 11vh;
+}
+
+.logo {
+  display: inline-block;
+  position: relative;
+  min-width: 50%;
+  padding-left: 2em;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.social {
+  display: inline-block;
+  position: relative;
+  min-width: 50%;
+  padding-right: 2em;
+  text-align: right;
+  vertical-align: middle;
+}
+
+.social>div {
+  text-align: right;
+  width: 75%;
+  line-height: 90%;
+}
+
+.social>div p {
+  font-size: 1.3em;
+  font-weight: 200%;
+}
+
+.busca-imovel {
+  position: relative;
+  height: 41vh;
+}
+
+.busca-imovel-container {
+  margin: 0 auto;
+  min-height: 100%;
+}
+
+.busca-bkg img {
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: -1;
+}
+
+.busca-form {
+  z-index: 2;
+  width: auto;
+  max-height: 46vh;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.busca-bkg {
+  position: relative;
+  min-height: 38vh;
+}
+
+.busca-bkg img {
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 1;
+}
+
+.quero-container {
+  margin: 1.8em;
+  display: flex;
+  justify-content: center;
+}
+
+.quero-container select:first-child {
+  margin-left: 3vh;
+  margin-right: 2vh;
+  width: 21.2%;
+  height: 3.8vh;
+}
+
+.quero-container select:last-child {
+  margin-left: 3vh;
+  margin-right: 2vh;
+  width: 21.3%;
+  height: 3.8vh;
+}
+
+.tenho-container {
+  display: flex;
+  justify-content: center;
+}
+
+.tenho-container select:first-child {
+  margin-left: 11.5vh;
+  margin-right: 2.8vh;
+  margin-top: .7vh;
+  width: 20.2%;
+  height: 3.8vh;
+}
+
+.tenho-container select:last-child {
+  margin-left: 2.6vh;
+  margin-right: 2vh;
+  margin-top: .7vh;
+  width: 20.2%;
+  height: 3.8vh;
+}
+
+/*.quero-tipo-imovel {
+  margin-left: 3vh;
+  margin-right: 2vh;
+  width: 21.2%;
+  height: 3.8vh;
+}*/
+
+/*.quero-end-imovel {
+  margin-left: 3vh;
+  margin-right: 2vh;
+  width: 21.3%;
+  height: 3.8vh;
+}*/
+
+/*.tenho-tipo-imovel {
+  width: 21.2%;
+  margin-right: 2.6vh;
+  margin-left: 10.5vh;
+  margin-top: .4vh;
+  height: 3.8vh;
+}*/
+
+/*.tenho-end-imovel {
+  margin-left: 2.6vh;
+  margin-right: 2vh;
+  margin-top: .7vh;
+  width: 20.2%;
+  height: 3.8vh;
+}*/
+
+/* -------------- Header End------------- */
+
+/* -------------- Banner Start ------------- */
+.permuta-container {
+  display: contents;
+  height: 15vh;
+  padding: 0;
+}
+
+.permuta {
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  color: #8b8b8b;
+  text-align: center;
+  line-height: 300%;
+}
+
+.rojo {
+  color: #6f3024;
+}
+
+/* -------------- Banner End------------- */
+
+/* -------------- Footer Start ------------- */
+.footer-container {
+  background: #925854;
+  padding-left: 5em;
+  height: auto;
+}
+
+.footer-container>.ajuda {
+  text-align: left
+}
+
+.ajuda-txt {
+  font-size: 1.3em;
+  width: auto;
+  padding-left: 3.96em;
+  margin: auto;
+}
+
+.ajuda {
+  margin: auto;
+  padding: 3em 2em;
+}
+
+.tel-txt {
+  border-left: 5px solid #fff;
+  padding: 2em 0 2em 3.1em;
+  display: inline-block;
+  font-size: 1.3em;
+}
+
+.chat-container {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  width: auto;
+  padding: 2em 5.143em;
+}
+
+.chat-container .wrapper {
+  padding-right: 4em;
+}
+
+.chat-btn {
+  border: 2px solid #fff;
+  color: #fff;
+  display: block;
+  padding: 2em 5em 2em 5em;
+  line-height: 0;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+
+.chat-btn a:hover {
+  text-decoration: none;
+}
+
+.chat-btn a p {
+  color: #fff;
+  font-size: 1.3em;
+}
+
+.ajuda,
+.ajuda-txt,
+.tel-txt,
+.divisor {
+  color: #fff;
+}
+
+.ajuda-txt p:nth-child(3) {
+  opacity: .5;
+}
+
+footer .row .col-md-12 {
+  position: relative;
+  text-align: left;
+}
+
+/* -------------- Footer End------------- */
