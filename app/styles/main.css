@@ -27,8 +27,9 @@ body {
 
 .links-container div:nth-child(5) {
   background: #ff6111;
-  display: table;
-  /*padding: 3px 0 2px 0;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .links-container div:nth-child(5) a {
@@ -52,13 +53,14 @@ body {
 
 /* -------------- Header Start------------- */
 header {
-  background: url("../images/city-bkg.png") no-repeat;
+  background: url("../images/city-bkg.png") center no-repeat;
   background-position-y: 2.4em;
   height: 57vh;
 }
 
 nav>.container-fluid {
   margin: 0;
+  padding: 0;
 }
 
 .logo-container {
@@ -223,9 +225,80 @@ nav>.container-fluid {
 
 /* -------------- Banner End------------- */
 
+/* -------------- ImovelThumbs Start------------- */
+.card {
+  border: 0.3px #000 solid;
+  margin-right: 4vh;
+  margin-bottom: 2vh;
+}
+
+.card img {
+  max-width: 100%;
+}
+
+.card-title h4 {
+  font-size: 1.5em;
+}
+
+.card-body h5 {
+  padding-left: 3.25vh;
+}
+
+.card-ico-container {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-evenly;
+  padding-top: 1vh;
+  padding-bottom: 2vh;
+  letter-spacing: 1vh;
+  font-size: 1.5em;
+}
+
+.metros-container {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+.mts-util {
+  text-align: right;
+  width: 100%;
+  font-size: 1.3em;
+}
+
+.mts-util span {
+  text-transform: uppercase;
+  padding-right: 2vh;
+}
+
+.mts-total {
+  text-align: left;
+  width: 100%;
+  font-size: 1.3em;
+  display: list-item;
+  list-style-position: inside;
+}
+
+.mts-total span:first-child {
+  list-style-type: disc;
+}
+
+.mts-total span:last-child {
+  text-transform: uppercase;
+}
+
+@media(min-width: 768px) {
+  .col-sm-4 {
+    width: 29%;
+  }
+}
+
+/* -------------- ImovelThumbs End------------- */
+
 /* -------------- Footer Start ------------- */
 .footer-container {
-  background: #925854;
+  /*background: #925854;*/
   padding-left: 5em;
   height: auto;
 }
@@ -298,6 +371,11 @@ nav>.container-fluid {
 footer .row .col-md-12 {
   position: relative;
   text-align: left;
+}
+
+footer {
+  background: #ac827e url("../images/halfdasdiv.png") no-repeat;
+  background-position: 23vh 0;
 }
 
 /* -------------- Footer End------------- */

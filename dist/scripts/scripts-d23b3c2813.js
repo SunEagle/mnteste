@@ -1,1 +1,0 @@
-"use strict";angular.module("mnFrontendTestApp",["ngAnimate","ngCookies","ngResource","ngRoute","ngSanitize","ngTouch"]).config(["$routeProvider",function(n){n.when("/",{templateUrl:"views/main.html",controller:"MainCtrl",controllerAs:"main"}).otherwise({redirectTo:"/"})}]),angular.module("mnFrontendTestApp").controller("MainCtrl",["$scope",function(n){}]);

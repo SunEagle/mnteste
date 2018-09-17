@@ -1,17 +1,17 @@
 <!doctype html>
-<html>
+<html ng-app="mnFrontendTestApp">
 
 <head>
-  <meta charset="utf-8" ng-app="mnFrontendTestApp">
+  <meta charset="utf-8">
   <title></title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
   <link rel="stylesheet" href="styles/vendor-969213113b.css">
-  <link rel="stylesheet" href="styles/main-dd024a4396.css">
+  <link rel="stylesheet" href="styles/main-8989aa0015.css">
 </head>
 
-<body ng-controller="MainCtrl">
+<body ng-controller="mainCtrl">
   <!--[if lte IE 8]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -83,9 +83,6 @@
     </div>
 
     <div class="busca-imovel-container">
-      <!-- <div class="busca-bkg">
-        <img src="../images/busca-bkg.png" alt="plano-de-fundo-busca">
-      </div> -->
 
       <div class="busca-form">
         <form name="buscar-imovel" class="form-pesquisa">
@@ -180,7 +177,52 @@
     </div>
   </div>
 
-  <div class="" imovel-thumb-container" ng-include=""></div>
+  <!-- ------------------------------------------ ImovelThumbs ------------------------------------ -->
+  <section>
+    <div class="imovel-thumb-container">
+      <!-- <imovel-thumbs class="ng-cloak"></imovel-thumbs> -->
+      <div class="container">
+        <div class="row">
+
+            <div class="col-sm-4 card" ng-repeat="imovel in imoveis">
+              <img class="card-img-top" ng-src="{{imovel.img}}" alt="imagem do imóvel resultante da busca">
+
+              <div class="card-body">
+                <div class="card-title">
+                  <h4 class=".card-text text-center"><span>{{imovel.desc}}</span> -{{imovel.end}}</h4>
+                </div>
+                <h5 class=".card-text">{{imovel.cidade}}</h5>
+
+                <div class="card-ico-container">
+                  <div class="ico-banheira">
+                    <span>{{imovel.random}}</span><img src="../images/ico-banheira.png">
+                  </div>
+                  <div class="ico-solteiro">
+                    <span>{{imovel.random}}</span><img src="../images/ico-solt.png">
+                  </div>
+                  <div class="ico-casal">
+                    <span>{{imovel.random}}</span><img src="../images/ico-casal.png">
+                  </div>
+                  <div class="ico-garagem">
+                    <span>{{imovel.random}}</span><img src="../images/ico-garagem.png">
+                  </div>
+                </div>
+
+                <div class="metros-container">
+                  <div class="mts-util">
+                    {{imovel.metrosUtil}} m<sup>2</sup><span> Útil</span>
+                  </div>
+                  <div class="mts-total">
+                    <span>{{imovel.metrosTotal}}</span><sup>2</sup><span> Total</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- -------------------------------- ImovelThumbs ------------------------------- -->
 
   <footer>
     <div class="footer-container">
@@ -234,7 +276,7 @@
 
   <script src="scripts/vendor-23eb0fa901.js"></script>
 
-  <script src="scripts/scripts-d23b3c2813.js"></script>
+  <script src="scripts/scripts-744a1f6bf9.js"></script>
 </body>
 
 </html>
